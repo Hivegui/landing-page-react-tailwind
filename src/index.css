@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  bottom: 10px; /* Ajuste a posição vertical das setas conforme necessário */
+  border: none;
+  font-size: 2rem; /* Tamanho das setas */
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+
+}
+
+.custom-prev-arrow {
+  left: 25%; /* Posição da seta esquerda */
+}
+
+.custom-next-arrow {
+  right: 25%; /* Posição da seta direita */
+}

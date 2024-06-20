@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "target": "es5",
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*", "src/*"]
+    }
+  },
+  "include": ["src/components", "src/custom.d.ts"]
+}
