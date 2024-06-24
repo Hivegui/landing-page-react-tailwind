@@ -1,0 +1,53 @@
+/* START: Redes Sociais */
+.social-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  .social-links {
+    flex-wrap: wrap;
+  }
+  .social-item {
+    flex: 1 1 45%; /* Ajuste a largura conforme necessário */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Espaço entre as linhas */
+  }
+}
+/* END: Redes Sociais */
+
+/* START: Formação Acadêmica */
+@media (max-width: 760px) {
+  .academic-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* END: Formação Acadêmica */
+
+/* START: Hardskills */
+@media (max-width: 760px) {
+  .hardskills-icons {
+    flex-wrap: wrap;
+  }
+  .hardskills-icon {
+    flex: 5 5 40%; /* Ajuste a largura conforme necessário para obter duas colunas */
+    margin-bottom: 10px; /* Espaço entre as linhas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* END: Hardskills */
+
+/* START: Experiência Profissional */
+@media (max-width: 760px) {
+  .professional-experience {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* END: Experiência Profissional */
