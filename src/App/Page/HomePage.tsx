@@ -36,8 +36,8 @@ const HomePage = () => {
 
       {/* Links com redes sociais */}
       <div className="text-white mt-10 flex justify-center gap-10">
-        <ul className="list-none flex gap-10">
-          <li className="flex items-center">
+        <ul className="list-none flex gap-10 social-links">
+          <li className="flex items-center social-item">
             <img src={Gmail} alt="E-mail" className="w-10 h-10 mx-5" />
             <a
               href="mailto:guifariasgomes@gmail.com"
@@ -48,7 +48,7 @@ const HomePage = () => {
               E-mail
             </a>
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center social-item">
             <img src={Linkedin} alt="Linkedin" className="w-10 h-10 mx-5" />
             <a
               href="https://www.linkedin.com/in/guilhermefariasgomes/"
@@ -59,7 +59,7 @@ const HomePage = () => {
               Linkedin
             </a>
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center social-item">
             <img src={Github} alt="Github" className="w-10 h-10 mx-5" />
             <a
               href="https://github.com/Hivegui"
@@ -70,7 +70,7 @@ const HomePage = () => {
               Github
             </a>
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center social-item">
             <img src={Instagram} alt="Instagram" className="w-10 h-10 mx-5" />
             <a
               href="https://www.instagram.com/hivegui/"
@@ -85,7 +85,7 @@ const HomePage = () => {
       </div>
 
       {/* Formação acadêmica */}
-      <div className="text-white mt-10 flex flex-col justify-center items-center">
+      <div className="text-white mt-10 flex flex-col justify-center items-center academic-section">
         <h3 style={{ fontFamily: "Honk" }} className="text-3xl font-semibold">
           Formação Acadêmica
         </h3>
@@ -106,79 +106,103 @@ const HomePage = () => {
         <h3 style={{ fontFamily: "Honk" }} className="text-3xl font-semibold">
           Tecnologias Utilizadas
         </h3>
-        <div className="flex justify-center items-center space-x-4 mt-5">
-          <img
-            alt="Gui-Js"
-            height="30"
-            width="40"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-          ></img>
-          <img
-            alt="Gui-Angular"
-            height="30"
-            width="40"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
-          ></img>
-          <img
-            alt="Gui-Ts"
-            height="30"
-            width="40"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
-          ></img>
-          <img
-            alt="Gui-React"
-            height="30"
-            width="40"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-          ></img>
-          <img
-            alt="Gui-Java"
-            height="40"
-            width="50"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
-          ></img>
-          <img
-            alt="Gui-PHP"
-            height="30"
-            width="40"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
-          ></img>
-          <img
-            alt="Gui-Node"
-            height="30"
-            width="40"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-          ></img>
-          <img
-            alt="Gui-Python"
-            height="30"
-            width="40"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-          ></img>
-          <img
-            alt="Gui-HTML"
-            height="30"
-            width="40"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-          ></img>
-          <img
-            alt="Gui-Tailwind"
-            height="30"
-            width="40"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          ></img>
-          <img
-            alt="Gui-Mysql"
-            height="40"
-            width="50"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-          ></img>
-          <img
-            alt="Gui-Postgre"
-            height="40"
-            width="50"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
-          ></img>
+        <div className="flex justify-center items-center space-x-4 mt-5 hardskills-icons">
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Js"
+              height="30"
+              width="40"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Angular"
+              height="30"
+              width="40"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Ts"
+              height="30"
+              width="40"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-React"
+              height="30"
+              width="40"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Java"
+              height="40"
+              width="50"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-PHP"
+              height="30"
+              width="40"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Node"
+              height="30"
+              width="40"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Python"
+              height="30"
+              width="40"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-HTML"
+              height="30"
+              width="40"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Tailwind"
+              height="30"
+              width="40"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Mysql"
+              height="40"
+              width="50"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+            />
+          </div>
+          <div className="hardskills-icon">
+            <img
+              alt="Gui-Postgre"
+              height="40"
+              width="50"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+            />
+          </div>
         </div>
       </div>
 
@@ -198,7 +222,7 @@ const HomePage = () => {
       </div>
 
       {/* Experiência Profissional */}
-      <div className="text-white mt-10 flex flex-col items-center">
+      <div className="text-white mt-10 flex flex-col items-center professional-experience">
         <h2 style={{ fontFamily: "Honk" }} className="font-bold text-3xl mb-5">
           Experiência Profissional
         </h2>
@@ -247,12 +271,14 @@ const HomePage = () => {
           showArrows={true}
           autoPlay={true}
           infiniteLoop={true}
-          showStatus={false} // Remover o status do carrossel
+          showStatus={true} // Remover o status do carrossel
           showThumbs={false} // Remover os thumbs do carrossel
           centerMode={true} // Centralizar os slides
           centerSlidePercentage={50} // Porcentagem do tamanho do slide central
           dynamicHeight={false} // Desativar a altura dinâmica
-          interval={5000} // Tempo de exibição de cada slide (5 segundos)
+          interval={3000} // Tempo de exibição de cada slide (5 segundos)
+          swipeable={true} // Habilitar swipe
+          emulateTouch={true} // Emular toque para deslizar
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
             hasPrev && (
               <button
