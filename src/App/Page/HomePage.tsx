@@ -18,6 +18,7 @@ import PageJS from "../../assets/portfolio/page-js.png";
 import SlideJS from "../../assets/portfolio/slide-js.png";
 import Angular from "../../assets/portfolio/todo-list.png";
 import StockControl from "../../assets/portfolio/stock.png";
+import CarWashed from "../../assets/portfolio/carwashed.png";
 
 const HomePage = () => {
   const currentYear = new Date().getFullYear();
@@ -341,6 +342,17 @@ const HomePage = () => {
             <img
               src={StockControl}
               alt="StockControl"
+              style={{
+                maxWidth: "90%",
+                maxHeight: "100%",
+                objectFit: "contain",
+              }}
+            />
+          </div>
+          <div className="md:basis-1/3 lg:basis-1/4 mt-10 mb-20">
+            <img
+              src={CarWashed}
+              alt="CarWashed"
               style={{
                 maxWidth: "90%",
                 maxHeight: "100%",
